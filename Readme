@@ -1,0 +1,32 @@
+NickNames
+=========
+
+This is a database of first name equivalence classes. Given a common first name, this class will return an array of possible substitute names (nick names).
+
+This list of names can then be used to build a search in Rails that, for example, return all Bobs, if you search for Robert, and vice versa.
+
+
+Example
+=======
+
+    NickNames['bob'] == ["bill", "billy", "bob", "bobby", "rob", "robby", "robert"]
+
+To build a nickname-insensitive 
+    conditions = []
+    first_names_cond_sql = (["first_name SOUNDS LIKE ?"]*first_names.size).join(' OR ')
+    conditions << "((#{first_names_cond_sql}) AND last_name SOUNDS LIKE ?) AND (people.listed = ? AND users.state = ?)"
+
+
+Credits
+=======
+
+Source of data: http://deron.meranda.us/data/nicknames.txt
+
+    Prepared by Deron Meranda <deron.meranda@gmail.com>
+
+    Based upon 1990 US Census Data and other various sources
+    Some data also from http://www.censusdiggins.com/
+
+Plugin is copyright (c) 2008 Tyler Rick, released under the MIT license
+
+The latest version can always be found at 
