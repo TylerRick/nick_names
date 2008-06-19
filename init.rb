@@ -1,2 +1,2 @@
 # Include hook code here
-require 'lib/nick_names'
+require 'nick_names'
