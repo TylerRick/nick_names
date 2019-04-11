@@ -141,7 +141,7 @@ class NickNames
       %w[chris                kristin             ],
       %w[chris                kristy              ],
       %w[chuck                charles             ],
-      %w[cindy                cinderlla           ],
+      %w[cindy                cinderella           ],
       %w[cindy                cynthia             ],
       %w[clara                clarissa            ],
       %w[cliff                clifford            ],
